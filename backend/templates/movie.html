@@ -1,0 +1,27 @@
+<div class="movie-container" onclick="flipPoster(this)">
+    <div class="movie-poster">
+        <div class="movie-front">
+            <img src="{{ poster_url }}" alt="Movie Poster">
+        </div>
+        <div class="movie-back">
+            <h3>Cast</h3>
+            <p>{{ cast_details }}</p>
+        </div>
+    </div>
+</div>
+
+<h2>{{ movie_title }}</h2>
+<p>{{ plot }}</p>
+
+<!-- Movie Rating -->
+<div class="rating">
+    {% for i in range(star_rating) %}
+        ★
+    {% endfor %}
+</div>
+
+<script>
+function flipPoster(element) {
+    element.querySelector('.movie-poster').classList.toggle('flipped');
+}
+</script>

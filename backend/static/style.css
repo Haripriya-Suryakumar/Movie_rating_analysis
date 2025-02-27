@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.search-box input::placeholder {
+    color: #ddd;
+}
+
+.search-box button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.search-box button:hover {
+    background: darkred;
+}
+
+.movie {
+    border: 1px solid white;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.movie img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.movie p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input {
+        margin-bottom: 10px;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+}
+
